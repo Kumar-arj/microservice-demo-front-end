@@ -1,5 +1,5 @@
 def label = "any"
-def mvn_version = 'M2'
+// def mvn_version = 'M2'
 {
    node (label) {
        stage ('Checkout SCM'){
