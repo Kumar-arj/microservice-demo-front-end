@@ -34,7 +34,7 @@ spec:
           docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
             def customImage = docker.build("kumararj/sock-shop-micro-services-front:${BUILD_NUMBER}")
             customImage.push()
-            customImage.tag('kumararj/sock-shop-micro-services-front:latest')
+            customImage.tag('latest')
             customImage.push()
           }
         }
